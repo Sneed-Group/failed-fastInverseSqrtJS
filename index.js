@@ -13,16 +13,12 @@ function fisqrt(number) {
     return y;
 }
 
-//manual sqrt
-function msqrt(number) {
-    for (var i = 0; i * i <= number; i++) {
-        if (i * i === number)
-            return i;
-   }
-   return number;
+//square
+function sq(n1, n2) {
+    return n1 * n2;
 }
 
-//square
-function sq(number) {
+//square self
+function sqs(number) {
     return number * number;
 }
