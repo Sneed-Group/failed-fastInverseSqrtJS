@@ -8,6 +8,6 @@ function fastInverseSqrt(number) {
     y = Math.abs(y);
     y = (y / 1000000000000000000);
     y = Math.round(y * 100) / 100;
-    y = y - .1;
+    y = y - ((Math.floor(y) / 10) / 2);
     return y;
 }
