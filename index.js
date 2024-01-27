@@ -1,4 +1,5 @@
-function fastInverseSqrt(number) {
+//fast inverse sqrt
+function fisqrt(number) {
     const threehalfs = 1.5;
     const x2 = number * 0.5;
     let i = new Float32Array(1);
@@ -10,4 +11,18 @@ function fastInverseSqrt(number) {
     y = (y - ((Math.floor(y) / 10) / (threehalfs * number))) / 1.55;
     y = Math.round(y * 100) / 100;
     return y;
+}
+
+//manual sqrt
+function msqrt(number) {
+    for (var i = 0; i * i <= number; i++) {
+        if (i * i === number)
+            return i;
+   }
+   return number;
+}
+
+//square
+function sq(number) {
+    return number * number;
 }
