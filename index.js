@@ -7,7 +7,7 @@ function fastInverseSqrt(number) {
     y = threehalfs - (x2 * y * y);
     y = Math.abs(y);
     y = (y / 1000000000000000000);
+    y = y - ((Math.floor(y) / 10) / .28);
     y = Math.round(y * 100) / 100;
-    y = y - ((Math.floor(y) / 10) / 2);
     return y;
 }
